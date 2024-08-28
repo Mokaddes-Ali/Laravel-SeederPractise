@@ -2,19 +2,20 @@
 
 namespace Database\Seeders;
 
-use App\Models\ClientModel;
+use App\Models\RoleModel;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ClientModelSeeder extends Seeder
+class RoleModelSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        ClientModel::create([
-            'name' => 'User',
+        RoleModel::create([
+            'role_name' => 'admin',
+
         ]);
     }
 }
